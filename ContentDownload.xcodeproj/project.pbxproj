@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51C2B6C3178DC60A00CF38B7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6C2178DC60A00CF38B7 /* CoreData.framework */; };
+		51C2B6C5178DC60A00CF38B7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6C4178DC60A00CF38B7 /* MessageUI.framework */; };
+		51C2B6C7178DC60A00CF38B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6C6178DC60A00CF38B7 /* QuartzCore.framework */; };
+		51C2B6C9178DC60A00CF38B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6C8178DC60A00CF38B7 /* SystemConfiguration.framework */; };
+		51C2B6CB178DC60A00CF38B7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6CA178DC60A00CF38B7 /* Security.framework */; };
+		51C2B6CD178DC60A00CF38B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6CC178DC60A00CF38B7 /* UIKit.framework */; };
+		51C2B6CF178DC60A00CF38B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6CE178DC60A00CF38B7 /* Foundation.framework */; };
+		51C2B6D1178DC60A00CF38B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6D0178DC60A00CF38B7 /* CoreGraphics.framework */; };
+		51C2B6D3178DC60A00CF38B7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6D2178DC60A00CF38B7 /* CFNetwork.framework */; };
+		51C2B6D5178DC60A00CF38B7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B6D4178DC60A00CF38B7 /* MobileCoreServices.framework */; };
+		51C2B6DB178DC60A00CF38B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B6D9178DC60A00CF38B7 /* InfoPlist.strings */; };
+		51C2B6DD178DC60A00CF38B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2B6DC178DC60A00CF38B7 /* main.m */; };
+		51C2B6DF178DC60A00CF38B7 /* ContentDownload-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B6DE178DC60A00CF38B7 /* ContentDownload-Prefix.pch */; };
+		51C2B736178DC60B00CF38B7 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B735178DC60B00CF38B7 /* libRestKit.a */; };
+		51C2B75B178DC60B00CF38B7 /* libSalesforceCommonUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B75A178DC60B00CF38B7 /* libSalesforceCommonUtils.a */; };
+		51C2B763178DC60C00CF38B7 /* libSalesforceOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B762178DC60C00CF38B7 /* libSalesforceOAuth.a */; };
+		51C2B779178DC60C00CF38B7 /* libSalesforceSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B778178DC60C00CF38B7 /* libSalesforceSDK.a */; };
+		51C2B783178DC60C00CF38B7 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B782178DC60C00CF38B7 /* libsqlcipher.a */; };
+		51C2B785178DC60C00CF38B7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B784178DC60C00CF38B7 /* LICENSE */; };
+		51C2B788178DC60C00CF38B7 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B787178DC60C00CF38B7 /* libcrypto.a */; };
+		51C2B78A178DC60C00CF38B7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B789178DC60C00CF38B7 /* libssl.a */; };
+		51C2B78C178DC60C00CF38B7 /* openssl_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B78B178DC60C00CF38B7 /* openssl_license.txt */; };
+		51C2B790178DC60C00CF38B7 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B78F178DC60C00CF38B7 /* icon-72.png */; };
+		51C2B792178DC60C00CF38B7 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B791178DC60C00CF38B7 /* icon-72@2x.png */; };
+		51C2B794178DC60C00CF38B7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B793178DC60C00CF38B7 /* icon.png */; };
+		51C2B796178DC60C00CF38B7 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B795178DC60C00CF38B7 /* icon@2x.png */; };
+		51C2B799178DC60C00CF38B7 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B798178DC60C00CF38B7 /* Default-Landscape~ipad.png */; };
+		51C2B79B178DC60C00CF38B7 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B79A178DC60C00CF38B7 /* Default-Landscape@2x~ipad.png */; };
+		51C2B79D178DC60C00CF38B7 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B79C178DC60C00CF38B7 /* Default-Portrait~ipad.png */; };
+		51C2B79F178DC60C00CF38B7 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B79E178DC60C00CF38B7 /* Default-Portrait@2x~ipad.png */; };
+		51C2B7A1178DC60C00CF38B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7A0178DC60C00CF38B7 /* Default.png */; };
+		51C2B7A3178DC60C00CF38B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7A2178DC60C00CF38B7 /* Default@2x.png */; };
+		51C2B7A5178DC60C00CF38B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7A4178DC60C00CF38B7 /* Default-568h@2x.png */; };
+		51C2B7A7178DC60C00CF38B7 /* Default~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7A6178DC60C00CF38B7 /* Default~iPad.png */; };
+		51C2B7A9178DC60C00CF38B7 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7A8178DC60C00CF38B7 /* readme.txt */; };
+		51C2B7AD178DC60C00CF38B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2B7AC178DC60C00CF38B7 /* AppDelegate.m */; };
+		51C2B7B0178DC60C00CF38B7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2B7AF178DC60C00CF38B7 /* RootViewController.m */; };
+		51C2B7B3178DC60C00CF38B7 /* SFAuthorizingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7B2178DC60C00CF38B7 /* SFAuthorizingViewController.xib */; };
+		51C2B7B5178DC60C00CF38B7 /* SFNativeRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7B4178DC60C00CF38B7 /* SFNativeRootViewController.xib */; };
+		51C2B7B7178DC60C00CF38B7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B7B6178DC60C00CF38B7 /* libxml2.dylib */; };
+		51C2B7B9178DC60C00CF38B7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2B7B8178DC60C00CF38B7 /* libz.dylib */; };
+		51C2B7BB178DC60C00CF38B7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7BA178DC60C00CF38B7 /* Settings.bundle */; };
+		51C2B7BD178DC60C00CF38B7 /* SalesforceSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51C2B7BC178DC60C00CF38B7 /* SalesforceSDKResources.bundle */; };
+		51C2B7C8178DC68100CF38B7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2B7C7178DC68100CF38B7 /* MBProgressHUD.m */; };
+		51C2B7CC178DC6A000CF38B7 /* AMFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2B7CB178DC6A000CF38B7 /* AMFileDownloader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51C2B6BF178DC60A00CF38B7 /* ContentDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C2B6C2178DC60A00CF38B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		51C2B6C4178DC60A00CF38B7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		51C2B6C6178DC60A00CF38B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		51C2B6C8178DC60A00CF38B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		51C2B6CA178DC60A00CF38B7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		51C2B6CC178DC60A00CF38B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		51C2B6CE178DC60A00CF38B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		51C2B6D0178DC60A00CF38B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		51C2B6D2178DC60A00CF38B7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		51C2B6D4178DC60A00CF38B7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		51C2B6D8178DC60A00CF38B7 /* ContentDownload-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ContentDownload-Info.plist"; sourceTree = "<group>"; };
+		51C2B6DA178DC60A00CF38B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		51C2B6DC178DC60A00CF38B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51C2B6DE178DC60A00CF38B7 /* ContentDownload-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContentDownload-Prefix.pch"; sourceTree = "<group>"; };
+		51C2B6E4178DC60B00CF38B7 /* CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreData.h; path = dependencies/RestKit/include/RestKit/CoreData.h; sourceTree = "<group>"; };
+		51C2B6E5178DC60B00CF38B7 /* Errors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Errors.h; path = dependencies/RestKit/include/RestKit/Errors.h; sourceTree = "<group>"; };
+		51C2B6E6178DC60B00CF38B7 /* FileMD5Hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileMD5Hash.h; path = dependencies/RestKit/include/RestKit/FileMD5Hash.h; sourceTree = "<group>"; };
+		51C2B6E7178DC60B00CF38B7 /* GCOAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCOAuth.h; path = dependencies/RestKit/include/RestKit/GCOAuth.h; sourceTree = "<group>"; };
+		51C2B6E8178DC60B00CF38B7 /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = dependencies/RestKit/include/RestKit/JSONKit.h; sourceTree = "<group>"; };
+		51C2B6E9178DC60B00CF38B7 /* lcl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl.h; path = dependencies/RestKit/include/RestKit/lcl.h; sourceTree = "<group>"; };
+		51C2B6EA178DC60B00CF38B7 /* lcl_config_components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl_config_components.h; path = dependencies/RestKit/include/RestKit/lcl_config_components.h; sourceTree = "<group>"; };
+		51C2B6EB178DC60B00CF38B7 /* lcl_config_components.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl_config_components.template.h; path = dependencies/RestKit/include/RestKit/lcl_config_components.template.h; sourceTree = "<group>"; };
+		51C2B6EC178DC60B00CF38B7 /* lcl_config_extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl_config_extensions.h; path = dependencies/RestKit/include/RestKit/lcl_config_extensions.h; sourceTree = "<group>"; };
+		51C2B6ED178DC60B00CF38B7 /* lcl_config_extensions.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl_config_extensions.template.h; path = dependencies/RestKit/include/RestKit/lcl_config_extensions.template.h; sourceTree = "<group>"; };
+		51C2B6EE178DC60B00CF38B7 /* lcl_config_logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl_config_logger.h; path = dependencies/RestKit/include/RestKit/lcl_config_logger.h; sourceTree = "<group>"; };
+		51C2B6EF178DC60B00CF38B7 /* lcl_config_logger.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lcl_config_logger.template.h; path = dependencies/RestKit/include/RestKit/lcl_config_logger.template.h; sourceTree = "<group>"; };
+		51C2B6F0178DC60B00CF38B7 /* LCLNSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LCLNSLog.h; path = dependencies/RestKit/include/RestKit/LCLNSLog.h; sourceTree = "<group>"; };
+		51C2B6F1178DC60B00CF38B7 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Network.h; path = dependencies/RestKit/include/RestKit/Network.h; sourceTree = "<group>"; };
+		51C2B6F2178DC60B00CF38B7 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "dependencies/RestKit/include/RestKit/NSData+Base64.h"; sourceTree = "<group>"; };
+		51C2B6F3178DC60B00CF38B7 /* NSData+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+MD5.h"; path = "dependencies/RestKit/include/RestKit/NSData+MD5.h"; sourceTree = "<group>"; };
+		51C2B6F4178DC60B00CF38B7 /* NSDictionary+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RKAdditions.h"; path = "dependencies/RestKit/include/RestKit/NSDictionary+RKAdditions.h"; sourceTree = "<group>"; };
+		51C2B6F5178DC60B00CF38B7 /* NSDictionary+RKRequestSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RKRequestSerialization.h"; path = "dependencies/RestKit/include/RestKit/NSDictionary+RKRequestSerialization.h"; sourceTree = "<group>"; };
+		51C2B6F6178DC60B00CF38B7 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+ActiveRecord.h"; path = "dependencies/RestKit/include/RestKit/NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		51C2B6F7178DC60B00CF38B7 /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "dependencies/RestKit/include/RestKit/NSString+MD5.h"; sourceTree = "<group>"; };
+		51C2B6F8178DC60B00CF38B7 /* NSString+RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+RestKit.h"; path = "dependencies/RestKit/include/RestKit/NSString+RestKit.h"; sourceTree = "<group>"; };
+		51C2B6F9178DC60B00CF38B7 /* NSURL+RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSURL+RestKit.h"; path = "dependencies/RestKit/include/RestKit/NSURL+RestKit.h"; sourceTree = "<group>"; };
+		51C2B6FA178DC60B00CF38B7 /* ObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjectMapping.h; path = dependencies/RestKit/include/RestKit/ObjectMapping.h; sourceTree = "<group>"; };
+		51C2B6FB178DC60B00CF38B7 /* RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RestKit.h; path = dependencies/RestKit/include/RestKit/RestKit.h; sourceTree = "<group>"; };
+		51C2B6FC178DC60B00CF38B7 /* RKAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAlert.h; path = dependencies/RestKit/include/RestKit/RKAlert.h; sourceTree = "<group>"; };
+		51C2B6FD178DC60B00CF38B7 /* RKClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKClient.h; path = dependencies/RestKit/include/RestKit/RKClient.h; sourceTree = "<group>"; };
+		51C2B6FE178DC60B00CF38B7 /* RKConfigurationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKConfigurationDelegate.h; path = dependencies/RestKit/include/RestKit/RKConfigurationDelegate.h; sourceTree = "<group>"; };
+		51C2B6FF178DC60B00CF38B7 /* RKDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKDirectory.h; path = dependencies/RestKit/include/RestKit/RKDirectory.h; sourceTree = "<group>"; };
+		51C2B700178DC60B00CF38B7 /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKDotNetDateFormatter.h; path = dependencies/RestKit/include/RestKit/RKDotNetDateFormatter.h; sourceTree = "<group>"; };
+		51C2B701178DC60B00CF38B7 /* RKDynamicObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKDynamicObjectMapping.h; path = dependencies/RestKit/include/RestKit/RKDynamicObjectMapping.h; sourceTree = "<group>"; };
+		51C2B702178DC60B00CF38B7 /* RKErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKErrorMessage.h; path = dependencies/RestKit/include/RestKit/RKErrorMessage.h; sourceTree = "<group>"; };
+		51C2B703178DC60B00CF38B7 /* RKFixCategoryBug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKFixCategoryBug.h; path = dependencies/RestKit/include/RestKit/RKFixCategoryBug.h; sourceTree = "<group>"; };
+		51C2B704178DC60B00CF38B7 /* RKJSONParserJSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKJSONParserJSONKit.h; path = dependencies/RestKit/include/RestKit/RKJSONParserJSONKit.h; sourceTree = "<group>"; };
+		51C2B705178DC60B00CF38B7 /* RKLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKLog.h; path = dependencies/RestKit/include/RestKit/RKLog.h; sourceTree = "<group>"; };
+		51C2B706178DC60B00CF38B7 /* RKManagedObjectCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectCache.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectCache.h; sourceTree = "<group>"; };
+		51C2B707178DC60B00CF38B7 /* RKManagedObjectLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectLoader.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectLoader.h; sourceTree = "<group>"; };
+		51C2B708178DC60B00CF38B7 /* RKManagedObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectMapping.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectMapping.h; sourceTree = "<group>"; };
+		51C2B709178DC60B00CF38B7 /* RKManagedObjectMappingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectMappingOperation.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectMappingOperation.h; sourceTree = "<group>"; };
+		51C2B70A178DC60B00CF38B7 /* RKManagedObjectSeeder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectSeeder.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectSeeder.h; sourceTree = "<group>"; };
+		51C2B70B178DC60B00CF38B7 /* RKManagedObjectStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectStore.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectStore.h; sourceTree = "<group>"; };
+		51C2B70C178DC60B00CF38B7 /* RKManagedObjectThreadSafeInvocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectThreadSafeInvocation.h; path = dependencies/RestKit/include/RestKit/RKManagedObjectThreadSafeInvocation.h; sourceTree = "<group>"; };
+		51C2B70D178DC60B00CF38B7 /* RKMappingOperationQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKMappingOperationQueue.h; path = dependencies/RestKit/include/RestKit/RKMappingOperationQueue.h; sourceTree = "<group>"; };
+		51C2B70E178DC60B00CF38B7 /* RKMIMETypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKMIMETypes.h; path = dependencies/RestKit/include/RestKit/RKMIMETypes.h; sourceTree = "<group>"; };
+		51C2B70F178DC60B00CF38B7 /* RKNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKNotifications.h; path = dependencies/RestKit/include/RestKit/RKNotifications.h; sourceTree = "<group>"; };
+		51C2B710178DC60B00CF38B7 /* RKOAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKOAuthClient.h; path = dependencies/RestKit/include/RestKit/RKOAuthClient.h; sourceTree = "<group>"; };
+		51C2B711178DC60B00CF38B7 /* RKObjectAttributeMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectAttributeMapping.h; path = dependencies/RestKit/include/RestKit/RKObjectAttributeMapping.h; sourceTree = "<group>"; };
+		51C2B712178DC60B00CF38B7 /* RKObjectLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectLoader.h; path = dependencies/RestKit/include/RestKit/RKObjectLoader.h; sourceTree = "<group>"; };
+		51C2B713178DC60B00CF38B7 /* RKObjectLoader_Internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectLoader_Internals.h; path = dependencies/RestKit/include/RestKit/RKObjectLoader_Internals.h; sourceTree = "<group>"; };
+		51C2B714178DC60B00CF38B7 /* RKObjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectManager.h; path = dependencies/RestKit/include/RestKit/RKObjectManager.h; sourceTree = "<group>"; };
+		51C2B715178DC60B00CF38B7 /* RKObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMapper.h; path = dependencies/RestKit/include/RestKit/RKObjectMapper.h; sourceTree = "<group>"; };
+		51C2B716178DC60B00CF38B7 /* RKObjectMapper_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMapper_Private.h; path = dependencies/RestKit/include/RestKit/RKObjectMapper_Private.h; sourceTree = "<group>"; };
+		51C2B717178DC60B00CF38B7 /* RKObjectMapperError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMapperError.h; path = dependencies/RestKit/include/RestKit/RKObjectMapperError.h; sourceTree = "<group>"; };
+		51C2B718178DC60B00CF38B7 /* RKObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMapping.h; path = dependencies/RestKit/include/RestKit/RKObjectMapping.h; sourceTree = "<group>"; };
+		51C2B719178DC60B00CF38B7 /* RKObjectMappingDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingDefinition.h; path = dependencies/RestKit/include/RestKit/RKObjectMappingDefinition.h; sourceTree = "<group>"; };
+		51C2B71A178DC60B00CF38B7 /* RKObjectMappingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingOperation.h; path = dependencies/RestKit/include/RestKit/RKObjectMappingOperation.h; sourceTree = "<group>"; };
+		51C2B71B178DC60B00CF38B7 /* RKObjectMappingProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingProvider.h; path = dependencies/RestKit/include/RestKit/RKObjectMappingProvider.h; sourceTree = "<group>"; };
+		51C2B71C178DC60B00CF38B7 /* RKObjectMappingResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingResult.h; path = dependencies/RestKit/include/RestKit/RKObjectMappingResult.h; sourceTree = "<group>"; };
+		51C2B71D178DC60B00CF38B7 /* RKObjectPropertyInspector+CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RKObjectPropertyInspector+CoreData.h"; path = "dependencies/RestKit/include/RestKit/RKObjectPropertyInspector+CoreData.h"; sourceTree = "<group>"; };
+		51C2B71E178DC60B00CF38B7 /* RKObjectPropertyInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectPropertyInspector.h; path = dependencies/RestKit/include/RestKit/RKObjectPropertyInspector.h; sourceTree = "<group>"; };
+		51C2B71F178DC60B00CF38B7 /* RKObjectRelationshipMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectRelationshipMapping.h; path = dependencies/RestKit/include/RestKit/RKObjectRelationshipMapping.h; sourceTree = "<group>"; };
+		51C2B720178DC60B00CF38B7 /* RKObjectRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectRouter.h; path = dependencies/RestKit/include/RestKit/RKObjectRouter.h; sourceTree = "<group>"; };
+		51C2B721178DC60B00CF38B7 /* RKObjectSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKObjectSerializer.h; path = dependencies/RestKit/include/RestKit/RKObjectSerializer.h; sourceTree = "<group>"; };
+		51C2B722178DC60B00CF38B7 /* RKParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKParams.h; path = dependencies/RestKit/include/RestKit/RKParams.h; sourceTree = "<group>"; };
+		51C2B723178DC60B00CF38B7 /* RKParamsAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKParamsAttachment.h; path = dependencies/RestKit/include/RestKit/RKParamsAttachment.h; sourceTree = "<group>"; };
+		51C2B724178DC60B00CF38B7 /* RKParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKParser.h; path = dependencies/RestKit/include/RestKit/RKParser.h; sourceTree = "<group>"; };
+		51C2B725178DC60B00CF38B7 /* RKParserRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKParserRegistry.h; path = dependencies/RestKit/include/RestKit/RKParserRegistry.h; sourceTree = "<group>"; };
+		51C2B726178DC60B00CF38B7 /* RKPathMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKPathMatcher.h; path = dependencies/RestKit/include/RestKit/RKPathMatcher.h; sourceTree = "<group>"; };
+		51C2B727178DC60B00CF38B7 /* RKReachabilityObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKReachabilityObserver.h; path = dependencies/RestKit/include/RestKit/RKReachabilityObserver.h; sourceTree = "<group>"; };
+		51C2B728178DC60B00CF38B7 /* RKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRequest.h; path = dependencies/RestKit/include/RestKit/RKRequest.h; sourceTree = "<group>"; };
+		51C2B729178DC60B00CF38B7 /* RKRequest_Internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRequest_Internals.h; path = dependencies/RestKit/include/RestKit/RKRequest_Internals.h; sourceTree = "<group>"; };
+		51C2B72A178DC60B00CF38B7 /* RKRequestCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRequestCache.h; path = dependencies/RestKit/include/RestKit/RKRequestCache.h; sourceTree = "<group>"; };
+		51C2B72B178DC60B00CF38B7 /* RKRequestQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRequestQueue.h; path = dependencies/RestKit/include/RestKit/RKRequestQueue.h; sourceTree = "<group>"; };
+		51C2B72C178DC60B00CF38B7 /* RKRequestSerializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRequestSerializable.h; path = dependencies/RestKit/include/RestKit/RKRequestSerializable.h; sourceTree = "<group>"; };
+		51C2B72D178DC60B00CF38B7 /* RKRequestSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRequestSerialization.h; path = dependencies/RestKit/include/RestKit/RKRequestSerialization.h; sourceTree = "<group>"; };
+		51C2B72E178DC60B00CF38B7 /* RKResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKResponse.h; path = dependencies/RestKit/include/RestKit/RKResponse.h; sourceTree = "<group>"; };
+		51C2B72F178DC60B00CF38B7 /* RKRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKRouter.h; path = dependencies/RestKit/include/RestKit/RKRouter.h; sourceTree = "<group>"; };
+		51C2B730178DC60B00CF38B7 /* RKSearchEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKSearchEngine.h; path = dependencies/RestKit/include/RestKit/RKSearchEngine.h; sourceTree = "<group>"; };
+		51C2B731178DC60B00CF38B7 /* RKURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKURL.h; path = dependencies/RestKit/include/RestKit/RKURL.h; sourceTree = "<group>"; };
+		51C2B732178DC60B00CF38B7 /* RKXMLParserLibXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKXMLParserLibXML.h; path = dependencies/RestKit/include/RestKit/RKXMLParserLibXML.h; sourceTree = "<group>"; };
+		51C2B733178DC60B00CF38B7 /* SOCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SOCKit.h; path = dependencies/RestKit/include/RestKit/SOCKit.h; sourceTree = "<group>"; };
+		51C2B734178DC60B00CF38B7 /* Support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Support.h; path = dependencies/RestKit/include/RestKit/Support.h; sourceTree = "<group>"; };
+		51C2B735178DC60B00CF38B7 /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = dependencies/RestKit/libRestKit.a; sourceTree = "<group>"; };
+		51C2B739178DC60B00CF38B7 /* NSData+SFAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+SFAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSData+SFAdditions.h"; sourceTree = "<group>"; };
+		51C2B73A178DC60B00CF38B7 /* NSDictionary+SFAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SFAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSDictionary+SFAdditions.h"; sourceTree = "<group>"; };
+		51C2B73B178DC60B00CF38B7 /* NSMutableAttributedString+SFAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+SFAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSMutableAttributedString+SFAdditions.h"; sourceTree = "<group>"; };
+		51C2B73C178DC60B00CF38B7 /* NSObject+SFBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+SFBlocks.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSObject+SFBlocks.h"; sourceTree = "<group>"; };
+		51C2B73D178DC60B00CF38B7 /* NSString+SFAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+SFAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSString+SFAdditions.h"; sourceTree = "<group>"; };
+		51C2B73E178DC60B00CF38B7 /* NSString+SFPathAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+SFPathAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSString+SFPathAdditions.h"; sourceTree = "<group>"; };
+		51C2B73F178DC60B00CF38B7 /* NSURL+SFAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSURL+SFAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/NSURL+SFAdditions.h"; sourceTree = "<group>"; };
+		51C2B740178DC60B00CF38B7 /* SalesforceCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SalesforceCommonUtils.h; path = dependencies/SalesforceCommonUtils/Headers/SalesforceCommonUtils.h; sourceTree = "<group>"; };
+		51C2B741178DC60B00CF38B7 /* SFCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFCoverView.h; path = dependencies/SalesforceCommonUtils/Headers/SFCoverView.h; sourceTree = "<group>"; };
+		51C2B742178DC60B00CF38B7 /* SFCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFCrypto.h; path = dependencies/SalesforceCommonUtils/Headers/SFCrypto.h; sourceTree = "<group>"; };
+		51C2B743178DC60B00CF38B7 /* SFDateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFDateUtil.h; path = dependencies/SalesforceCommonUtils/Headers/SFDateUtil.h; sourceTree = "<group>"; };
+		51C2B744178DC60B00CF38B7 /* SFDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFDeviceInfo.h; path = dependencies/SalesforceCommonUtils/Headers/SFDeviceInfo.h; sourceTree = "<group>"; };
+		51C2B745178DC60B00CF38B7 /* SFEncryptionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFEncryptionManager.h; path = dependencies/SalesforceCommonUtils/Headers/SFEncryptionManager.h; sourceTree = "<group>"; };
+		51C2B746178DC60B00CF38B7 /* SFGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFGradientView.h; path = dependencies/SalesforceCommonUtils/Headers/SFGradientView.h; sourceTree = "<group>"; };
+		51C2B747178DC60B00CF38B7 /* SFInactivityTimerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFInactivityTimerCenter.h; path = dependencies/SalesforceCommonUtils/Headers/SFInactivityTimerCenter.h; sourceTree = "<group>"; };
+		51C2B748178DC60B00CF38B7 /* SFKeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFKeychainItemWrapper.h; path = dependencies/SalesforceCommonUtils/Headers/SFKeychainItemWrapper.h; sourceTree = "<group>"; };
+		51C2B749178DC60B00CF38B7 /* SFLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFLogger.h; path = dependencies/SalesforceCommonUtils/Headers/SFLogger.h; sourceTree = "<group>"; };
+		51C2B74A178DC60B00CF38B7 /* SFMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFMD5.h; path = dependencies/SalesforceCommonUtils/Headers/SFMD5.h; sourceTree = "<group>"; };
+		51C2B74B178DC60B00CF38B7 /* SFPadPickListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFPadPickListViewController.h; path = dependencies/SalesforceCommonUtils/Headers/SFPadPickListViewController.h; sourceTree = "<group>"; };
+		51C2B74C178DC60B00CF38B7 /* SFPathUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFPathUtil.h; path = dependencies/SalesforceCommonUtils/Headers/SFPathUtil.h; sourceTree = "<group>"; };
+		51C2B74D178DC60B00CF38B7 /* SFPhonePickListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFPhonePickListViewController.h; path = dependencies/SalesforceCommonUtils/Headers/SFPhonePickListViewController.h; sourceTree = "<group>"; };
+		51C2B74E178DC60B00CF38B7 /* SFPickListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFPickListViewController.h; path = dependencies/SalesforceCommonUtils/Headers/SFPickListViewController.h; sourceTree = "<group>"; };
+		51C2B74F178DC60B00CF38B7 /* SFSoqlBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSoqlBuilder.h; path = dependencies/SalesforceCommonUtils/Headers/SFSoqlBuilder.h; sourceTree = "<group>"; };
+		51C2B750178DC60B00CF38B7 /* SFSoslBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSoslBuilder.h; path = dependencies/SalesforceCommonUtils/Headers/SFSoslBuilder.h; sourceTree = "<group>"; };
+		51C2B751178DC60B00CF38B7 /* SFSoslReturningBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSoslReturningBuilder.h; path = dependencies/SalesforceCommonUtils/Headers/SFSoslReturningBuilder.h; sourceTree = "<group>"; };
+		51C2B752178DC60B00CF38B7 /* SFTestContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFTestContext.h; path = dependencies/SalesforceCommonUtils/Headers/SFTestContext.h; sourceTree = "<group>"; };
+		51C2B753178DC60B00CF38B7 /* SFUIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFUIUtils.h; path = dependencies/SalesforceCommonUtils/Headers/SFUIUtils.h; sourceTree = "<group>"; };
+		51C2B754178DC60B00CF38B7 /* UIActionSheet+SFBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+SFBlocks.h"; path = "dependencies/SalesforceCommonUtils/Headers/UIActionSheet+SFBlocks.h"; sourceTree = "<group>"; };
+		51C2B755178DC60B00CF38B7 /* UIAlertView+SFBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+SFBlocks.h"; path = "dependencies/SalesforceCommonUtils/Headers/UIAlertView+SFBlocks.h"; sourceTree = "<group>"; };
+		51C2B756178DC60B00CF38B7 /* UIBarButtonItem+SFAddtions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+SFAddtions.h"; path = "dependencies/SalesforceCommonUtils/Headers/UIBarButtonItem+SFAddtions.h"; sourceTree = "<group>"; };
+		51C2B757178DC60B00CF38B7 /* UIDevice+SFHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIDevice+SFHardware.h"; path = "dependencies/SalesforceCommonUtils/Headers/UIDevice+SFHardware.h"; sourceTree = "<group>"; };
+		51C2B758178DC60B00CF38B7 /* UILabel+SFAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UILabel+SFAdditions.h"; path = "dependencies/SalesforceCommonUtils/Headers/UILabel+SFAdditions.h"; sourceTree = "<group>"; };
+		51C2B75A178DC60B00CF38B7 /* libSalesforceCommonUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceCommonUtils.a; path = dependencies/SalesforceCommonUtils/Libraries/libSalesforceCommonUtils.a; sourceTree = "<group>"; };
+		51C2B75F178DC60B00CF38B7 /* SFOAuthCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFOAuthCoordinator.h; path = dependencies/SalesforceOAuth/Headers/SalesforceOAuth/SFOAuthCoordinator.h; sourceTree = "<group>"; };
+		51C2B760178DC60C00CF38B7 /* SFOAuthCredentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFOAuthCredentials.h; path = dependencies/SalesforceOAuth/Headers/SalesforceOAuth/SFOAuthCredentials.h; sourceTree = "<group>"; };
+		51C2B761178DC60C00CF38B7 /* SFOAuthInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFOAuthInfo.h; path = dependencies/SalesforceOAuth/Headers/SalesforceOAuth/SFOAuthInfo.h; sourceTree = "<group>"; };
+		51C2B762178DC60C00CF38B7 /* libSalesforceOAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceOAuth.a; path = dependencies/SalesforceOAuth/Libraries/libSalesforceOAuth.a; sourceTree = "<group>"; };
+		51C2B767178DC60C00CF38B7 /* SalesforceSDKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SalesforceSDKConstants.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SalesforceSDKConstants.h; sourceTree = "<group>"; };
+		51C2B768178DC60C00CF38B7 /* SFApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFApplication.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFApplication.h; sourceTree = "<group>"; };
+		51C2B769178DC60C00CF38B7 /* SFAccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFAccountManager.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFAccountManager.h; sourceTree = "<group>"; };
+		51C2B76A178DC60C00CF38B7 /* SFAuthenticationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFAuthenticationManager.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFAuthenticationManager.h; sourceTree = "<group>"; };
+		51C2B76B178DC60C00CF38B7 /* SFAuthorizingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFAuthorizingViewController.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFAuthorizingViewController.h; sourceTree = "<group>"; };
+		51C2B76C178DC60C00CF38B7 /* SFIdentityCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFIdentityCoordinator.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFIdentityCoordinator.h; sourceTree = "<group>"; };
+		51C2B76D178DC60C00CF38B7 /* SFIdentityData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFIdentityData.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFIdentityData.h; sourceTree = "<group>"; };
+		51C2B76E178DC60C00CF38B7 /* SFJsonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFJsonUtils.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFJsonUtils.h; sourceTree = "<group>"; };
+		51C2B76F178DC60C00CF38B7 /* SFNativeRestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFNativeRestAppDelegate.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFNativeRestAppDelegate.h; sourceTree = "<group>"; };
+		51C2B770178DC60C00CF38B7 /* SFNativeRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFNativeRootViewController.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFNativeRootViewController.h; sourceTree = "<group>"; };
+		51C2B771178DC60C00CF38B7 /* SFRestAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFRestAPI.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFRestAPI.h; sourceTree = "<group>"; };
+		51C2B772178DC60C00CF38B7 /* SFRestAPI+Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SFRestAPI+Blocks.h"; path = "dependencies/SalesforceSDK/include/SalesforceSDK/SFRestAPI+Blocks.h"; sourceTree = "<group>"; };
+		51C2B773178DC60C00CF38B7 /* SFRestAPI+QueryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SFRestAPI+QueryBuilder.h"; path = "dependencies/SalesforceSDK/include/SalesforceSDK/SFRestAPI+QueryBuilder.h"; sourceTree = "<group>"; };
+		51C2B774178DC60C00CF38B7 /* SFRestRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFRestRequest.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFRestRequest.h; sourceTree = "<group>"; };
+		51C2B775178DC60C00CF38B7 /* SFSecurityLockout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSecurityLockout.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFSecurityLockout.h; sourceTree = "<group>"; };
+		51C2B776178DC60C00CF38B7 /* SFPasscodeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFPasscodeManager.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFPasscodeManager.h; sourceTree = "<group>"; };
+		51C2B777178DC60C00CF38B7 /* SFPasscodeProviderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFPasscodeProviderManager.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFPasscodeProviderManager.h; sourceTree = "<group>"; };
+		51C2B778178DC60C00CF38B7 /* libSalesforceSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSalesforceSDK.a; path = dependencies/SalesforceSDK/libSalesforceSDK.a; sourceTree = "<group>"; };
+		51C2B77A178DC60C00CF38B7 /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/FMDatabase.h; sourceTree = "<group>"; };
+		51C2B77B178DC60C00CF38B7 /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/FMResultSet.h; sourceTree = "<group>"; };
+		51C2B77C178DC60C00CF38B7 /* SFSmartStoreDatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSmartStoreDatabaseManager.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFSmartStoreDatabaseManager.h; sourceTree = "<group>"; };
+		51C2B77D178DC60C00CF38B7 /* SFSmartStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSmartStore.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFSmartStore.h; sourceTree = "<group>"; };
+		51C2B77E178DC60C00CF38B7 /* SFSoupCursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSoupCursor.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFSoupCursor.h; sourceTree = "<group>"; };
+		51C2B77F178DC60C00CF38B7 /* SFSoupIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSoupIndex.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFSoupIndex.h; sourceTree = "<group>"; };
+		51C2B780178DC60C00CF38B7 /* SFSoupQuerySpec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSoupQuerySpec.h; path = dependencies/SalesforceSDK/include/SalesforceSDK/SFSoupQuerySpec.h; sourceTree = "<group>"; };
+		51C2B782178DC60C00CF38B7 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlcipher.a; path = dependencies/sqlcipher/libsqlcipher.a; sourceTree = "<group>"; };
+		51C2B784178DC60C00CF38B7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = dependencies/sqlcipher/LICENSE; sourceTree = "<group>"; };
+		51C2B787178DC60C00CF38B7 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = dependencies/openssl/libcrypto.a; sourceTree = "<group>"; };
+		51C2B789178DC60C00CF38B7 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = dependencies/openssl/libssl.a; sourceTree = "<group>"; };
+		51C2B78B178DC60C00CF38B7 /* openssl_license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = openssl_license.txt; path = dependencies/openssl/openssl_license.txt; sourceTree = "<group>"; };
+		51C2B78F178DC60C00CF38B7 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
+		51C2B791178DC60C00CF38B7 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@2x.png"; path = "Resources/icons/icon-72@2x.png"; sourceTree = "<group>"; };
+		51C2B793178DC60C00CF38B7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
+		51C2B795178DC60C00CF38B7 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
+		51C2B798178DC60C00CF38B7 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/splash/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		51C2B79A178DC60C00CF38B7 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "Resources/splash/Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		51C2B79C178DC60C00CF38B7 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "Resources/splash/Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		51C2B79E178DC60C00CF38B7 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "Resources/splash/Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		51C2B7A0178DC60C00CF38B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/splash/Default.png; sourceTree = "<group>"; };
+		51C2B7A2178DC60C00CF38B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
+		51C2B7A4178DC60C00CF38B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/splash/Default-568h@2x.png"; sourceTree = "<group>"; };
+		51C2B7A6178DC60C00CF38B7 /* Default~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iPad.png"; path = "Resources/splash/Default~iPad.png"; sourceTree = "<group>"; };
+		51C2B7A8178DC60C00CF38B7 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		51C2B7AB178DC60C00CF38B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		51C2B7AC178DC60C00CF38B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		51C2B7AE178DC60C00CF38B7 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/RootViewController.h; sourceTree = "<group>"; };
+		51C2B7AF178DC60C00CF38B7 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/RootViewController.m; sourceTree = "<group>"; };
+		51C2B7B2178DC60C00CF38B7 /* SFAuthorizingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SFAuthorizingViewController.xib; path = NativeRestApp/SFAuthorizingViewController.xib; sourceTree = "<group>"; };
+		51C2B7B4178DC60C00CF38B7 /* SFNativeRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SFNativeRootViewController.xib; path = NativeRestApp/SFNativeRootViewController.xib; sourceTree = "<group>"; };
+		51C2B7B6178DC60C00CF38B7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		51C2B7B8178DC60C00CF38B7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		51C2B7BA178DC60C00CF38B7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		51C2B7BC178DC60C00CF38B7 /* SalesforceSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SalesforceSDKResources.bundle; sourceTree = "<group>"; };
+		51C2B7C6178DC67A00CF38B7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../../../GSIDemo2/GSIDemo2/MBProgressHUD.h; sourceTree = "<group>"; };
+		51C2B7C7178DC68100CF38B7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../../../GSIDemo2/GSIDemo2/MBProgressHUD.m; sourceTree = "<group>"; };
+		51C2B7C9178DC68F00CF38B7 /* AMFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMFileDownloader.h; path = ../../../GSIDemo2/GSIDemo2/AMFileDownloader.h; sourceTree = "<group>"; };
+		51C2B7CA178DC69A00CF38B7 /* AMFileDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMFileDownloaderDelegate.h; path = ../../../GSIDemo2/GSIDemo2/AMFileDownloaderDelegate.h; sourceTree = "<group>"; };
+		51C2B7CB178DC6A000CF38B7 /* AMFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMFileDownloader.m; path = ../../../GSIDemo2/GSIDemo2/AMFileDownloader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51C2B6BB178DC60A00CF38B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C2B6C3178DC60A00CF38B7 /* CoreData.framework in Frameworks */,
+				51C2B6C5178DC60A00CF38B7 /* MessageUI.framework in Frameworks */,
+				51C2B6C7178DC60A00CF38B7 /* QuartzCore.framework in Frameworks */,
+				51C2B6C9178DC60A00CF38B7 /* SystemConfiguration.framework in Frameworks */,
+				51C2B6CB178DC60A00CF38B7 /* Security.framework in Frameworks */,
+				51C2B6CD178DC60A00CF38B7 /* UIKit.framework in Frameworks */,
+				51C2B6CF178DC60A00CF38B7 /* Foundation.framework in Frameworks */,
+				51C2B6D1178DC60A00CF38B7 /* CoreGraphics.framework in Frameworks */,
+				51C2B6D3178DC60A00CF38B7 /* CFNetwork.framework in Frameworks */,
+				51C2B6D5178DC60A00CF38B7 /* MobileCoreServices.framework in Frameworks */,
+				51C2B736178DC60B00CF38B7 /* libRestKit.a in Frameworks */,
+				51C2B75B178DC60B00CF38B7 /* libSalesforceCommonUtils.a in Frameworks */,
+				51C2B763178DC60C00CF38B7 /* libSalesforceOAuth.a in Frameworks */,
+				51C2B779178DC60C00CF38B7 /* libSalesforceSDK.a in Frameworks */,
+				51C2B783178DC60C00CF38B7 /* libsqlcipher.a in Frameworks */,
+				51C2B788178DC60C00CF38B7 /* libcrypto.a in Frameworks */,
+				51C2B78A178DC60C00CF38B7 /* libssl.a in Frameworks */,
+				51C2B7B7178DC60C00CF38B7 /* libxml2.dylib in Frameworks */,
+				51C2B7B9178DC60C00CF38B7 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51C2B6B5178DC60A00CF38B7 = {
+			isa = PBXGroup;
+			children = (
+				51C2B6D6178DC60A00CF38B7 /* ContentDownload */,
+				51C2B6C1178DC60A00CF38B7 /* Frameworks */,
+				51C2B6C0178DC60A00CF38B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51C2B6C0178DC60A00CF38B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B6BF178DC60A00CF38B7 /* ContentDownload.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51C2B6C1178DC60A00CF38B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B6C2178DC60A00CF38B7 /* CoreData.framework */,
+				51C2B6C4178DC60A00CF38B7 /* MessageUI.framework */,
+				51C2B6C6178DC60A00CF38B7 /* QuartzCore.framework */,
+				51C2B6C8178DC60A00CF38B7 /* SystemConfiguration.framework */,
+				51C2B6CA178DC60A00CF38B7 /* Security.framework */,
+				51C2B6CC178DC60A00CF38B7 /* UIKit.framework */,
+				51C2B6CE178DC60A00CF38B7 /* Foundation.framework */,
+				51C2B6D0178DC60A00CF38B7 /* CoreGraphics.framework */,
+				51C2B6D2178DC60A00CF38B7 /* CFNetwork.framework */,
+				51C2B6D4178DC60A00CF38B7 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51C2B6D6178DC60A00CF38B7 /* ContentDownload */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7C3178DC64000CF38B7 /* Content */,
+				51C2B7A8178DC60C00CF38B7 /* readme.txt */,
+				51C2B7BA178DC60C00CF38B7 /* Settings.bundle */,
+				51C2B7BC178DC60C00CF38B7 /* SalesforceSDKResources.bundle */,
+				51C2B6E0178DC60B00CF38B7 /* dependencies */,
+				51C2B78D178DC60C00CF38B7 /* Resources */,
+				51C2B7AA178DC60C00CF38B7 /* Classes */,
+				51C2B7B1178DC60C00CF38B7 /* NativeRestApp */,
+				51C2B6D7178DC60A00CF38B7 /* Supporting Files */,
+			);
+			path = ContentDownload;
+			sourceTree = "<group>";
+		};
+		51C2B6D7178DC60A00CF38B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B6D8178DC60A00CF38B7 /* ContentDownload-Info.plist */,
+				51C2B6D9178DC60A00CF38B7 /* InfoPlist.strings */,
+				51C2B6DC178DC60A00CF38B7 /* main.m */,
+				51C2B6DE178DC60A00CF38B7 /* ContentDownload-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51C2B6E0178DC60B00CF38B7 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7B6178DC60C00CF38B7 /* libxml2.dylib */,
+				51C2B7B8178DC60C00CF38B7 /* libz.dylib */,
+				51C2B6E1178DC60B00CF38B7 /* RestKit */,
+				51C2B737178DC60B00CF38B7 /* SalesforceCommonUtils */,
+				51C2B75C178DC60B00CF38B7 /* SalesforceOAuth */,
+				51C2B764178DC60C00CF38B7 /* SalesforceSDK */,
+				51C2B781178DC60C00CF38B7 /* sqlcipher */,
+				51C2B786178DC60C00CF38B7 /* openssl */,
+			);
+			name = dependencies;
+			sourceTree = "<group>";
+		};
+		51C2B6E1178DC60B00CF38B7 /* RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B735178DC60B00CF38B7 /* libRestKit.a */,
+				51C2B6E2178DC60B00CF38B7 /* include */,
+			);
+			name = RestKit;
+			sourceTree = "<group>";
+		};
+		51C2B6E2178DC60B00CF38B7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B6E3178DC60B00CF38B7 /* RestKit */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		51C2B6E3178DC60B00CF38B7 /* RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B6E4178DC60B00CF38B7 /* CoreData.h */,
+				51C2B6E5178DC60B00CF38B7 /* Errors.h */,
+				51C2B6E6178DC60B00CF38B7 /* FileMD5Hash.h */,
+				51C2B6E7178DC60B00CF38B7 /* GCOAuth.h */,
+				51C2B6E8178DC60B00CF38B7 /* JSONKit.h */,
+				51C2B6E9178DC60B00CF38B7 /* lcl.h */,
+				51C2B6EA178DC60B00CF38B7 /* lcl_config_components.h */,
+				51C2B6EB178DC60B00CF38B7 /* lcl_config_components.template.h */,
+				51C2B6EC178DC60B00CF38B7 /* lcl_config_extensions.h */,
+				51C2B6ED178DC60B00CF38B7 /* lcl_config_extensions.template.h */,
+				51C2B6EE178DC60B00CF38B7 /* lcl_config_logger.h */,
+				51C2B6EF178DC60B00CF38B7 /* lcl_config_logger.template.h */,
+				51C2B6F0178DC60B00CF38B7 /* LCLNSLog.h */,
+				51C2B6F1178DC60B00CF38B7 /* Network.h */,
+				51C2B6F2178DC60B00CF38B7 /* NSData+Base64.h */,
+				51C2B6F3178DC60B00CF38B7 /* NSData+MD5.h */,
+				51C2B6F4178DC60B00CF38B7 /* NSDictionary+RKAdditions.h */,
+				51C2B6F5178DC60B00CF38B7 /* NSDictionary+RKRequestSerialization.h */,
+				51C2B6F6178DC60B00CF38B7 /* NSManagedObject+ActiveRecord.h */,
+				51C2B6F7178DC60B00CF38B7 /* NSString+MD5.h */,
+				51C2B6F8178DC60B00CF38B7 /* NSString+RestKit.h */,
+				51C2B6F9178DC60B00CF38B7 /* NSURL+RestKit.h */,
+				51C2B6FA178DC60B00CF38B7 /* ObjectMapping.h */,
+				51C2B6FB178DC60B00CF38B7 /* RestKit.h */,
+				51C2B6FC178DC60B00CF38B7 /* RKAlert.h */,
+				51C2B6FD178DC60B00CF38B7 /* RKClient.h */,
+				51C2B6FE178DC60B00CF38B7 /* RKConfigurationDelegate.h */,
+				51C2B6FF178DC60B00CF38B7 /* RKDirectory.h */,
+				51C2B700178DC60B00CF38B7 /* RKDotNetDateFormatter.h */,
+				51C2B701178DC60B00CF38B7 /* RKDynamicObjectMapping.h */,
+				51C2B702178DC60B00CF38B7 /* RKErrorMessage.h */,
+				51C2B703178DC60B00CF38B7 /* RKFixCategoryBug.h */,
+				51C2B704178DC60B00CF38B7 /* RKJSONParserJSONKit.h */,
+				51C2B705178DC60B00CF38B7 /* RKLog.h */,
+				51C2B706178DC60B00CF38B7 /* RKManagedObjectCache.h */,
+				51C2B707178DC60B00CF38B7 /* RKManagedObjectLoader.h */,
+				51C2B708178DC60B00CF38B7 /* RKManagedObjectMapping.h */,
+				51C2B709178DC60B00CF38B7 /* RKManagedObjectMappingOperation.h */,
+				51C2B70A178DC60B00CF38B7 /* RKManagedObjectSeeder.h */,
+				51C2B70B178DC60B00CF38B7 /* RKManagedObjectStore.h */,
+				51C2B70C178DC60B00CF38B7 /* RKManagedObjectThreadSafeInvocation.h */,
+				51C2B70D178DC60B00CF38B7 /* RKMappingOperationQueue.h */,
+				51C2B70E178DC60B00CF38B7 /* RKMIMETypes.h */,
+				51C2B70F178DC60B00CF38B7 /* RKNotifications.h */,
+				51C2B710178DC60B00CF38B7 /* RKOAuthClient.h */,
+				51C2B711178DC60B00CF38B7 /* RKObjectAttributeMapping.h */,
+				51C2B712178DC60B00CF38B7 /* RKObjectLoader.h */,
+				51C2B713178DC60B00CF38B7 /* RKObjectLoader_Internals.h */,
+				51C2B714178DC60B00CF38B7 /* RKObjectManager.h */,
+				51C2B715178DC60B00CF38B7 /* RKObjectMapper.h */,
+				51C2B716178DC60B00CF38B7 /* RKObjectMapper_Private.h */,
+				51C2B717178DC60B00CF38B7 /* RKObjectMapperError.h */,
+				51C2B718178DC60B00CF38B7 /* RKObjectMapping.h */,
+				51C2B719178DC60B00CF38B7 /* RKObjectMappingDefinition.h */,
+				51C2B71A178DC60B00CF38B7 /* RKObjectMappingOperation.h */,
+				51C2B71B178DC60B00CF38B7 /* RKObjectMappingProvider.h */,
+				51C2B71C178DC60B00CF38B7 /* RKObjectMappingResult.h */,
+				51C2B71D178DC60B00CF38B7 /* RKObjectPropertyInspector+CoreData.h */,
+				51C2B71E178DC60B00CF38B7 /* RKObjectPropertyInspector.h */,
+				51C2B71F178DC60B00CF38B7 /* RKObjectRelationshipMapping.h */,
+				51C2B720178DC60B00CF38B7 /* RKObjectRouter.h */,
+				51C2B721178DC60B00CF38B7 /* RKObjectSerializer.h */,
+				51C2B722178DC60B00CF38B7 /* RKParams.h */,
+				51C2B723178DC60B00CF38B7 /* RKParamsAttachment.h */,
+				51C2B724178DC60B00CF38B7 /* RKParser.h */,
+				51C2B725178DC60B00CF38B7 /* RKParserRegistry.h */,
+				51C2B726178DC60B00CF38B7 /* RKPathMatcher.h */,
+				51C2B727178DC60B00CF38B7 /* RKReachabilityObserver.h */,
+				51C2B728178DC60B00CF38B7 /* RKRequest.h */,
+				51C2B729178DC60B00CF38B7 /* RKRequest_Internals.h */,
+				51C2B72A178DC60B00CF38B7 /* RKRequestCache.h */,
+				51C2B72B178DC60B00CF38B7 /* RKRequestQueue.h */,
+				51C2B72C178DC60B00CF38B7 /* RKRequestSerializable.h */,
+				51C2B72D178DC60B00CF38B7 /* RKRequestSerialization.h */,
+				51C2B72E178DC60B00CF38B7 /* RKResponse.h */,
+				51C2B72F178DC60B00CF38B7 /* RKRouter.h */,
+				51C2B730178DC60B00CF38B7 /* RKSearchEngine.h */,
+				51C2B731178DC60B00CF38B7 /* RKURL.h */,
+				51C2B732178DC60B00CF38B7 /* RKXMLParserLibXML.h */,
+				51C2B733178DC60B00CF38B7 /* SOCKit.h */,
+				51C2B734178DC60B00CF38B7 /* Support.h */,
+			);
+			name = RestKit;
+			sourceTree = "<group>";
+		};
+		51C2B737178DC60B00CF38B7 /* SalesforceCommonUtils */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B738178DC60B00CF38B7 /* Headers */,
+				51C2B759178DC60B00CF38B7 /* Libraries */,
+			);
+			name = SalesforceCommonUtils;
+			sourceTree = "<group>";
+		};
+		51C2B738178DC60B00CF38B7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B739178DC60B00CF38B7 /* NSData+SFAdditions.h */,
+				51C2B73A178DC60B00CF38B7 /* NSDictionary+SFAdditions.h */,
+				51C2B73B178DC60B00CF38B7 /* NSMutableAttributedString+SFAdditions.h */,
+				51C2B73C178DC60B00CF38B7 /* NSObject+SFBlocks.h */,
+				51C2B73D178DC60B00CF38B7 /* NSString+SFAdditions.h */,
+				51C2B73E178DC60B00CF38B7 /* NSString+SFPathAdditions.h */,
+				51C2B73F178DC60B00CF38B7 /* NSURL+SFAdditions.h */,
+				51C2B740178DC60B00CF38B7 /* SalesforceCommonUtils.h */,
+				51C2B741178DC60B00CF38B7 /* SFCoverView.h */,
+				51C2B742178DC60B00CF38B7 /* SFCrypto.h */,
+				51C2B743178DC60B00CF38B7 /* SFDateUtil.h */,
+				51C2B744178DC60B00CF38B7 /* SFDeviceInfo.h */,
+				51C2B745178DC60B00CF38B7 /* SFEncryptionManager.h */,
+				51C2B746178DC60B00CF38B7 /* SFGradientView.h */,
+				51C2B747178DC60B00CF38B7 /* SFInactivityTimerCenter.h */,
+				51C2B748178DC60B00CF38B7 /* SFKeychainItemWrapper.h */,
+				51C2B749178DC60B00CF38B7 /* SFLogger.h */,
+				51C2B74A178DC60B00CF38B7 /* SFMD5.h */,
+				51C2B74B178DC60B00CF38B7 /* SFPadPickListViewController.h */,
+				51C2B74C178DC60B00CF38B7 /* SFPathUtil.h */,
+				51C2B74D178DC60B00CF38B7 /* SFPhonePickListViewController.h */,
+				51C2B74E178DC60B00CF38B7 /* SFPickListViewController.h */,
+				51C2B74F178DC60B00CF38B7 /* SFSoqlBuilder.h */,
+				51C2B750178DC60B00CF38B7 /* SFSoslBuilder.h */,
+				51C2B751178DC60B00CF38B7 /* SFSoslReturningBuilder.h */,
+				51C2B752178DC60B00CF38B7 /* SFTestContext.h */,
+				51C2B753178DC60B00CF38B7 /* SFUIUtils.h */,
+				51C2B754178DC60B00CF38B7 /* UIActionSheet+SFBlocks.h */,
+				51C2B755178DC60B00CF38B7 /* UIAlertView+SFBlocks.h */,
+				51C2B756178DC60B00CF38B7 /* UIBarButtonItem+SFAddtions.h */,
+				51C2B757178DC60B00CF38B7 /* UIDevice+SFHardware.h */,
+				51C2B758178DC60B00CF38B7 /* UILabel+SFAdditions.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		51C2B759178DC60B00CF38B7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B75A178DC60B00CF38B7 /* libSalesforceCommonUtils.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		51C2B75C178DC60B00CF38B7 /* SalesforceOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B762178DC60C00CF38B7 /* libSalesforceOAuth.a */,
+				51C2B75D178DC60B00CF38B7 /* include */,
+			);
+			name = SalesforceOAuth;
+			sourceTree = "<group>";
+		};
+		51C2B75D178DC60B00CF38B7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B75E178DC60B00CF38B7 /* SalesforceOAuth */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		51C2B75E178DC60B00CF38B7 /* SalesforceOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B75F178DC60B00CF38B7 /* SFOAuthCoordinator.h */,
+				51C2B760178DC60C00CF38B7 /* SFOAuthCredentials.h */,
+				51C2B761178DC60C00CF38B7 /* SFOAuthInfo.h */,
+			);
+			name = SalesforceOAuth;
+			sourceTree = "<group>";
+		};
+		51C2B764178DC60C00CF38B7 /* SalesforceSDK */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B778178DC60C00CF38B7 /* libSalesforceSDK.a */,
+				51C2B765178DC60C00CF38B7 /* include */,
+			);
+			name = SalesforceSDK;
+			sourceTree = "<group>";
+		};
+		51C2B765178DC60C00CF38B7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B766178DC60C00CF38B7 /* SalesforceSDK */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		51C2B766178DC60C00CF38B7 /* SalesforceSDK */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B767178DC60C00CF38B7 /* SalesforceSDKConstants.h */,
+				51C2B768178DC60C00CF38B7 /* SFApplication.h */,
+				51C2B769178DC60C00CF38B7 /* SFAccountManager.h */,
+				51C2B76A178DC60C00CF38B7 /* SFAuthenticationManager.h */,
+				51C2B76B178DC60C00CF38B7 /* SFAuthorizingViewController.h */,
+				51C2B76C178DC60C00CF38B7 /* SFIdentityCoordinator.h */,
+				51C2B76D178DC60C00CF38B7 /* SFIdentityData.h */,
+				51C2B76E178DC60C00CF38B7 /* SFJsonUtils.h */,
+				51C2B76F178DC60C00CF38B7 /* SFNativeRestAppDelegate.h */,
+				51C2B770178DC60C00CF38B7 /* SFNativeRootViewController.h */,
+				51C2B771178DC60C00CF38B7 /* SFRestAPI.h */,
+				51C2B772178DC60C00CF38B7 /* SFRestAPI+Blocks.h */,
+				51C2B773178DC60C00CF38B7 /* SFRestAPI+QueryBuilder.h */,
+				51C2B774178DC60C00CF38B7 /* SFRestRequest.h */,
+				51C2B775178DC60C00CF38B7 /* SFSecurityLockout.h */,
+				51C2B776178DC60C00CF38B7 /* SFPasscodeManager.h */,
+				51C2B777178DC60C00CF38B7 /* SFPasscodeProviderManager.h */,
+				51C2B77A178DC60C00CF38B7 /* FMDatabase.h */,
+				51C2B77B178DC60C00CF38B7 /* FMResultSet.h */,
+				51C2B77C178DC60C00CF38B7 /* SFSmartStoreDatabaseManager.h */,
+				51C2B77D178DC60C00CF38B7 /* SFSmartStore.h */,
+				51C2B77E178DC60C00CF38B7 /* SFSoupCursor.h */,
+				51C2B77F178DC60C00CF38B7 /* SFSoupIndex.h */,
+				51C2B780178DC60C00CF38B7 /* SFSoupQuerySpec.h */,
+			);
+			name = SalesforceSDK;
+			sourceTree = "<group>";
+		};
+		51C2B781178DC60C00CF38B7 /* sqlcipher */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B782178DC60C00CF38B7 /* libsqlcipher.a */,
+				51C2B784178DC60C00CF38B7 /* LICENSE */,
+			);
+			name = sqlcipher;
+			sourceTree = "<group>";
+		};
+		51C2B786178DC60C00CF38B7 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B787178DC60C00CF38B7 /* libcrypto.a */,
+				51C2B789178DC60C00CF38B7 /* libssl.a */,
+				51C2B78B178DC60C00CF38B7 /* openssl_license.txt */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+		51C2B78D178DC60C00CF38B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B78E178DC60C00CF38B7 /* icons */,
+				51C2B797178DC60C00CF38B7 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		51C2B78E178DC60C00CF38B7 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B78F178DC60C00CF38B7 /* icon-72.png */,
+				51C2B791178DC60C00CF38B7 /* icon-72@2x.png */,
+				51C2B793178DC60C00CF38B7 /* icon.png */,
+				51C2B795178DC60C00CF38B7 /* icon@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		51C2B797178DC60C00CF38B7 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B798178DC60C00CF38B7 /* Default-Landscape~ipad.png */,
+				51C2B79A178DC60C00CF38B7 /* Default-Landscape@2x~ipad.png */,
+				51C2B79C178DC60C00CF38B7 /* Default-Portrait~ipad.png */,
+				51C2B79E178DC60C00CF38B7 /* Default-Portrait@2x~ipad.png */,
+				51C2B7A0178DC60C00CF38B7 /* Default.png */,
+				51C2B7A2178DC60C00CF38B7 /* Default@2x.png */,
+				51C2B7A4178DC60C00CF38B7 /* Default-568h@2x.png */,
+				51C2B7A6178DC60C00CF38B7 /* Default~iPad.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		51C2B7AA178DC60C00CF38B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7AB178DC60C00CF38B7 /* AppDelegate.h */,
+				51C2B7AC178DC60C00CF38B7 /* AppDelegate.m */,
+				51C2B7AE178DC60C00CF38B7 /* RootViewController.h */,
+				51C2B7AF178DC60C00CF38B7 /* RootViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		51C2B7B1178DC60C00CF38B7 /* NativeRestApp */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7B2178DC60C00CF38B7 /* SFAuthorizingViewController.xib */,
+				51C2B7B4178DC60C00CF38B7 /* SFNativeRootViewController.xib */,
+			);
+			name = NativeRestApp;
+			sourceTree = "<group>";
+		};
+		51C2B7C3178DC64000CF38B7 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7C4178DC65000CF38B7 /* Download */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		51C2B7C4178DC65000CF38B7 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7C9178DC68F00CF38B7 /* AMFileDownloader.h */,
+				51C2B7CA178DC69A00CF38B7 /* AMFileDownloaderDelegate.h */,
+				51C2B7CB178DC6A000CF38B7 /* AMFileDownloader.m */,
+				51C2B7C5178DC65E00CF38B7 /* Progress */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
+		51C2B7C5178DC65E00CF38B7 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				51C2B7C6178DC67A00CF38B7 /* MBProgressHUD.h */,
+				51C2B7C7178DC68100CF38B7 /* MBProgressHUD.m */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51C2B6BE178DC60A00CF38B7 /* ContentDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51C2B7C0178DC60C00CF38B7 /* Build configuration list for PBXNativeTarget "ContentDownload" */;
+			buildPhases = (
+				51C2B6BA178DC60A00CF38B7 /* Sources */,
+				51C2B6BB178DC60A00CF38B7 /* Frameworks */,
+				51C2B6BC178DC60A00CF38B7 /* Resources */,
+				51C2B6BD178DC60A00CF38B7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentDownload;
+			productName = ContentDownload;
+			productReference = 51C2B6BF178DC60A00CF38B7 /* ContentDownload.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51C2B6B6178DC60A00CF38B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Igor Androsov";
+			};
+			buildConfigurationList = 51C2B6B9178DC60A00CF38B7 /* Build configuration list for PBXProject "ContentDownload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 51C2B6B5178DC60A00CF38B7;
+			productRefGroup = 51C2B6C0178DC60A00CF38B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51C2B6BE178DC60A00CF38B7 /* ContentDownload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51C2B6BC178DC60A00CF38B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C2B6DB178DC60A00CF38B7 /* InfoPlist.strings in Resources */,
+				51C2B6DF178DC60A00CF38B7 /* ContentDownload-Prefix.pch in Resources */,
+				51C2B785178DC60C00CF38B7 /* LICENSE in Resources */,
+				51C2B78C178DC60C00CF38B7 /* openssl_license.txt in Resources */,
+				51C2B790178DC60C00CF38B7 /* icon-72.png in Resources */,
+				51C2B792178DC60C00CF38B7 /* icon-72@2x.png in Resources */,
+				51C2B794178DC60C00CF38B7 /* icon.png in Resources */,
+				51C2B796178DC60C00CF38B7 /* icon@2x.png in Resources */,
+				51C2B799178DC60C00CF38B7 /* Default-Landscape~ipad.png in Resources */,
+				51C2B79B178DC60C00CF38B7 /* Default-Landscape@2x~ipad.png in Resources */,
+				51C2B79D178DC60C00CF38B7 /* Default-Portrait~ipad.png in Resources */,
+				51C2B79F178DC60C00CF38B7 /* Default-Portrait@2x~ipad.png in Resources */,
+				51C2B7A1178DC60C00CF38B7 /* Default.png in Resources */,
+				51C2B7A3178DC60C00CF38B7 /* Default@2x.png in Resources */,
+				51C2B7A5178DC60C00CF38B7 /* Default-568h@2x.png in Resources */,
+				51C2B7A7178DC60C00CF38B7 /* Default~iPad.png in Resources */,
+				51C2B7A9178DC60C00CF38B7 /* readme.txt in Resources */,
+				51C2B7B3178DC60C00CF38B7 /* SFAuthorizingViewController.xib in Resources */,
+				51C2B7B5178DC60C00CF38B7 /* SFNativeRootViewController.xib in Resources */,
+				51C2B7BB178DC60C00CF38B7 /* Settings.bundle in Resources */,
+				51C2B7BD178DC60C00CF38B7 /* SalesforceSDKResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51C2B6BA178DC60A00CF38B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C2B6DD178DC60A00CF38B7 /* main.m in Sources */,
+				51C2B7AD178DC60C00CF38B7 /* AppDelegate.m in Sources */,
+				51C2B7B0178DC60C00CF38B7 /* RootViewController.m in Sources */,
+				51C2B7C8178DC68100CF38B7 /* MBProgressHUD.m in Sources */,
+				51C2B7CC178DC6A000CF38B7 /* AMFileDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C2B6BD178DC60A00CF38B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		51C2B6D9178DC60A00CF38B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51C2B6DA178DC60A00CF38B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51C2B7BE178DC60C00CF38B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51C2B7BF178DC60C00CF38B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51C2B7C1178DC60C00CF38B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ContentDownload/ContentDownload-Prefix.pch";
+				INFOPLIST_FILE = "ContentDownload/ContentDownload-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ContentDownload/dependencies/RestKit\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/SalesforceCommonUtils/Libraries\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/SalesforceOAuth/Libraries\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/SalesforceSDK\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/sqlcipher\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/openssl\"",
+					"\"$(SDKROOT)//usr/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		51C2B7C2178DC60C00CF38B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ContentDownload/ContentDownload-Prefix.pch";
+				INFOPLIST_FILE = "ContentDownload/ContentDownload-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ContentDownload/dependencies/RestKit\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/SalesforceCommonUtils/Libraries\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/SalesforceOAuth/Libraries\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/SalesforceSDK\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/sqlcipher\"",
+					"\"$(SRCROOT)/ContentDownload/dependencies/openssl\"",
+					"\"$(SDKROOT)//usr/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51C2B6B9178DC60A00CF38B7 /* Build configuration list for PBXProject "ContentDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C2B7BE178DC60C00CF38B7 /* Debug */,
+				51C2B7BF178DC60C00CF38B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51C2B7C0178DC60C00CF38B7 /* Build configuration list for PBXNativeTarget "ContentDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C2B7C1178DC60C00CF38B7 /* Debug */,
+				51C2B7C2178DC60C00CF38B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51C2B6B6178DC60A00CF38B7 /* Project object */;
+}
